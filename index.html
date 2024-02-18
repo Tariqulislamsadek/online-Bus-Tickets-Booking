@@ -14,6 +14,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/eda30ca7bb.js" crossorigin="anonymous"></script>
     <!-- customs styles -->
+    
     <style>
         .font-inter{
             font-family: "Inter", sans-serif
@@ -73,16 +74,99 @@
 
         <!-- offer section -->
         <section>
-            <h1>Best offers for you</h1>
-            <!-- 15% Offfer -->
-            <div>
+            <h1 class="mt-5 text-center font-extrabold text-2xl">Best offers for you</h1>
+            <div class="lg:flex grid-cols-1 justify-between mt-5">
+                <!-- 15% Offfer -->
+            <div class="bg-yellow-500 flex justify-between p-3 rounded-2xl w-[550px]">
+                <div>
+                    <h1 class="text-2xl font-bold">15%OFF</h1>
+                    <p class="text-xl font-bold">on your next purchase</p>
+                    <p>use by February 2024</p>
+                </div>
 
+                <div>
+                    <h1 class="text-2xl font-bold">New 15</h1>
+                    <p>Coupon Code</p>
+                </div>
+                
             </div>
             <!-- 20% Offer -->
+            <div class="bg-rose-400 flex justify-between p-3 rounded-2xl w-[550px]">
+                <div>
+                    <h1 class="text-2xl font-bold">20%OFF</h1>
+                    <p class="text-xl font-bold">on your next purchase</p>
+                    <p>use by February 2024</p>
+                </div>
+
+                <div>
+                    <h1 class="text-2xl font-bold">New 20</h1>
+                    <p>Coupon Code</p>
+                </div>
+                
+            </div>
+            </div>
+            <div class="flex justify-center">
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg border mt-4 text-[#1dd100]">See All Offers
+
+                </button>
+            </div>
         </section>
     </header>
-    <main>
+    <main  class="my-5 lg:mx-16">
+        <!-- price and destination -->
+        <h1 class="mt-5 text-center text-2xl font-extrabold">CitySprint Paribahan</h1>
+        <p class="my-5">With a user-friendly booking system, passengers can easily reserve their seats in advance, providing convenience and peace of mind for their travels.
+        </p>
+        
+        <section>
+     <!-- --------- parantes  -->
+     <div>
+        <!-- paribahan name and seats -->
+       <div class="flex justify-between">
+        <div class="flex gap-3">
+            <div>
+                <img src="./images/bus-logo.png" alt="">
+            </div>
+            <div>
+                <h1 class="text-xl font-extrabold">CitySprint paribahan</h1>
+                <p>Coach-010-WEB </p>
+            </div>
+            
+        </div>
 
+        <div class="flex p-3 bg-lime-200">
+            <div><img src="./images/seat-green.png" alt=""></div>
+            <div><p class="text-[#1dd100]">08 Seats left</p></div>
+        </div>
+       </div>
+       <!-- Route -->
+      <div class="bg-slate-200 p-4 mt-5 rounded-2xl">
+        <div class="flex mt-3 justify-between">
+            <div>Route</div>
+            <div>Dhaka - Cox Bazer</div>
+           </div>
+           <!-- time -->
+           <div class="flex mt-3 justify-between">
+            <div>Departure time</div>
+            <div>8:30PM</div>
+           </div>
+           <!-- break and drop point -->
+           <div class="flex justify-between mt-4">
+            <div><p class="bg-slate-300 p-3 rounded-l-lg">Boarding point-Feni</p></div>
+            <div><p class="bg-slate-300 p-3 rounded-l-lg">Droppoint point-kolatoli mor</p></div>
+            <div><p class="bg-slate-300 p-3 rounded-l-lg">Est.Time-12Hour</p></div>
+           </div>
+      </div>
+      <!-- price -->
+      <div>
+        <img src="./images/fare.png" alt="">
+        <h2 class="text-2xl font-extrabold">550Taka</h2>
+        <p>Per Set</p>
+      </div>
+       <!-- parantes end -->
+     </div>
+
+        </section>
     </main>
     <footer>
 
