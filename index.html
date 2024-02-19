@@ -19,6 +19,11 @@
         .font-inter{
             font-family: "Inter", sans-serif
         }
+
+        .btn-selected {
+      background-color: #1dd100;
+      color: #ffffff;
+    }
     </style>
 
 </head>
@@ -205,10 +210,10 @@
                         <p>A</p>
                     </div>
                     <div class="flex justify-self-auto lg:gap-12">
-                        <div><button class="btn bg-[#1dd100]">A1</button></div>
-                        <div><button class="btn bg-[#1dd100]">A2</button></div>
-                        <div><button class="btn bg-[#1dd100]">A3</button></div>
-                        <div><button class="btn bg-[#1dd100]">A4</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">A1</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">A2</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">A3</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">A4</button></div>
                     </div>
                   </div>
                     <!-- Seat B -->
@@ -217,10 +222,10 @@
                         <p>B</p>
                     </div>
                     <div class="flex justify-self-auto lg:gap-12">
-                        <div><button class="btn">B1</button></div>
-                        <div><button class="btn">B2</button></div>
-                        <div><button class="btn">B3</button></div>
-                        <div><button class="btn">B4</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">B1</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">B2</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">B3</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">B4</button></div>
                     </div>
                   </div>
                     <!-- Seat c -->
@@ -229,10 +234,10 @@
                         <p>C</p>
                     </div>
                     <div class="flex justify-self-auto lg:gap-12">
-                        <div><button class="btn">C1</button></div>
-                        <div><button class="btn">C2</button></div>
-                        <div><button class="btn">C3</button></div>
-                        <div><button class="btn">C4</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">C1</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">C2</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">C3</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">C4</button></div>
                     </div>
                   </div>
                     <!-- Seat E -->
@@ -241,10 +246,10 @@
                         <p>D</p>
                     </div>
                     <div class="flex justify-self-auto lg:gap-12">
-                        <div><button class="btn">D1</button></div>
-                        <div><button class="btn">D2</button></div>
-                        <div><button class="btn">D3</button></div>
-                        <div><button class="btn">D4</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">D1</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">D2</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">D3</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">D4</button></div>
                     </div>
                   </div>
                     <!-- Seat D -->
@@ -253,10 +258,10 @@
                         <p>E</p>
                     </div>
                     <div class="flex justify-self-auto lg:gap-12">
-                        <div><button class="btn">E1</button></div>
-                        <div><button class="btn">E2</button></div>
-                        <div><button class="btn">E3</button></div>
-                        <div><button class="btn">E4</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">E1</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">E2</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">E3</button></div>
+                        <div><button onclick="handleButtonClick(this)" class="btn">E4</button></div>
                     </div>
                   </div>
  
@@ -272,7 +277,7 @@
           <!-- Seat title -->
           <div class="flex justify-between font-bold mt-3">
             <div>
-                <p>Seat <span class="bg-[#1dd100] p-1">2</span> </p>
+                <p>Seat <span id="selectedCount" class="bg-[#1dd100] p-1">0</span> </p>
               </div>
               <div>
                 <p>Class</p>
